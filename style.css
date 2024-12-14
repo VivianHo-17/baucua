@@ -1,0 +1,109 @@
+/* Reset cơ bản */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  margin-top: 50px;
+}
+
+/* Kết quả quay */
+.result-row {
+  display: flex;
+  justify-content: center;
+  margin: 70px 0;
+}
+.result-box {
+  width: 80px;
+  height: 80px;
+  margin: 0 10px;
+  border: 2px solid #000;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Hàng đặt cược */
+.betting-row {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  gap: 10px;
+}
+.bet-box {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #000;
+  position: relative;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.bet-box:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.bet-box:active {
+  transform: scale(0.95);
+}
+.bet-points {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-weight: bold;
+}
+
+/* Nút quay (trên ô cược con gà) */
+.button-spin {
+  position: absolute;
+  top: 175px; /* Điều chỉnh khoảng cách phía trên */
+  left: calc(50% + 250px); /* Canh thẳng hàng với ô cược con gà */
+  transform: translateX(-50%);
+}
+.button-spin .button {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.button-spin .button:hover {
+  background-color: darkgreen;
+}
+
+/* Nút đặt lại (dưới ô cược con gà) */
+.button-reset {
+  position: absolute;
+  top: 340px; /* Điều chỉnh khoảng cách phía dưới */
+  left: calc(50% + 250px); /* Canh thẳng hàng với ô cược con gà */
+  transform: translateX(-50%);
+}
+.button-reset .button {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.button-reset .button:hover {
+  background-color: darkgreen;
+}
+
+/* Ghi chú */
+.controls-notes {
+  margin-top: 20px;
+}
+.notes {
+  text-align: left;
+  font-size: 20px;
+  color: #555;
+  line-height: 1.6;
+  width: 60%;
+  margin: 0 auto;
+}

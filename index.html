@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bầu Cua</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Kết quả quay -->
+    <div class="result-row">
+      <div class="result-box" id="box1" style="background-image: url('images/bau.png');"></div>
+      <div class="result-box" id="box2" style="background-image: url('images/bau.png');"></div>
+      <div class="result-box" id="box3" style="background-image: url('images/bau.png');"></div>
+    </div>
+
+    <!-- Nút quay -->
+    <div class="button-spin">
+      <button id="spin" class="button green">Quay</button>
+    </div>
+
+
+    
+    <!-- Hàng đặt cược -->
+    <div class="betting-row">
+      <div class="bet-box" data-index="0" style="background-image: url('images/bau.png');"><span class="bet-points" id="bet0">0</span></div>
+      <div class="bet-box" data-index="1" style="background-image: url('images/cua.png');"><span class="bet-points" id="bet1">0</span></div>
+      <div class="bet-box" data-index="2" style="background-image: url('images/tom.png');"><span class="bet-points" id="bet2">0</span></div>
+      <div class="bet-box" data-index="3" style="background-image: url('images/ca.png');"><span class="bet-points" id="bet3">0</span></div>
+      <div class="bet-box" data-index="4" style="background-image: url('images/huou.png');"><span class="bet-points" id="bet4">0</span></div>
+      <div class="bet-box" data-index="5" style="background-image: url('images/ga.png');"><span class="bet-points" id="bet5">0</span></div>
+    </div>
+
+    <!-- Nút đặt lại -->
+    <div class="button-reset">
+      <button id="reset" class="button green">Đặt lại</button>
+    </div>
+
+    <!-- Ghi chú -->
+    <div class="controls-notes">
+      <div class="notes">
+        <p><strong>Lưu ý:</strong></p>
+        <p>- Số lần đặt ở một 'Hình' sẽ là số lần xuất hiện của các 'Hình' trên 'Kết quả'.</p>
+        <p>- Tổng số điểm đặt trong một lần, tối đa là 3.</p>
+      </div>
+    </div>
+
+    <div id="message"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
